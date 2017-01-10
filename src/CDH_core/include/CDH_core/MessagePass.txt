@@ -1,0 +1,23 @@
+#ifndef MESSAGE_PASS_H_
+#define MESSAGE_PASS_H_
+
+#include <memory>
+#include "ros/ros.h"
+
+class MessagePass {
+private:
+  std::shared_ptr<void> mData;
+  ros::rosNodeHandle mNodeHandle;
+  std::shared_ptr<void> mCallBack;
+public:
+  //MessagePass();
+  MessagePass(std::shared_ptr<void> data, std::shared_ptr<void> callBack);
+  ~MessagePass();
+  std::shared_ptr<void> getData();
+  //std::shared_ptr<void> setData(std::shared_ptr<void> data);
+  //std::shared_ptr<void> setCallBack(std::shared_ptr<void> callBack);
+  //std::shared_ptr<void> getCallBack();
+  ros::rosNodeHandle getNodeHandle();
+  //ros::rosNodeHandle setNodeHandle(ros::rosNodeHandle nodeHandle);
+}
+#endif  // MESSAGE_PASS_H_

@@ -1,0 +1,19 @@
+#include "../include/CDH_core/MessagePass.h"
+#include <memory>
+
+MessagePass::MessagePass(std::shared_ptr<void> data, std::shared_ptr<void> callBack) {
+  mData = data;
+  mCallBack = callBack;
+}
+
+MessagePass::~MessagePass() {
+
+}
+
+std::shared_ptr<void> MessagePass::getData() {
+  return mData;
+}
+
+ros::rosNodeHandle MessagePass::getNodeHandle() {
+  return mNodeHandle;
+}

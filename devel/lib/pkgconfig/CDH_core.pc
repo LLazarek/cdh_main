@@ -1,0 +1,8 @@
+prefix=/home/david/ros_workspace/cdh_main/devel
+
+Name: CDH_core
+Description: Description of CDH_core
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/david/ros_workspace/cdh_main/devel/lib 
+Requires: 

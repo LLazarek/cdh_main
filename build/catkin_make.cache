@@ -1,2 +1,2 @@
 CDH_core
--DCATKIN_DEVEL_PREFIX=/home/david/ros_workspace/cdh_main/devel -DCMAKE_INSTALL_PREFIX=/home/david/ros_workspace/cdh_main/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/spacehauc/cdh_main/devel -DCMAKE_INSTALL_PREFIX=/home/spacehauc/cdh_main/install -G Unix Makefiles

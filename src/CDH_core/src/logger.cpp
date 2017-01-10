@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
   ros::NodeHandle rosNodeHandle;
 
   ros::Subscriber light_sensor_subscriber =
-    rosNodeHandle.subscribe("logging", 1000, logMessageCallback);
+    rosNodeHandle.subscribe("logger", 1000, logMessageCallback);
 
   ros::spin();
     return 0;
